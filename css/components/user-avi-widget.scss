@@ -1,0 +1,21 @@
+/* user-avi-widget.css */
+
+.user-avi-widget {
+    /* box-model */
+    display: flex;
+    flex-direction: row;
+}
+
+.user-avi {
+    /* visual */
+    aspect-ratio: 1/1;
+    border: .1rem white solid;
+    border-radius: 50%;
+    height: 10vh;
+    max-height: 4rem;
+    margin-top: 2rem;
+}
+
+.user-avi:not(:first-of-type) {
+    margin-left: -1.5rem;
+}

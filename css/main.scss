@@ -1,0 +1,29 @@
+/* main.css */
+
+/* base */
+@use './base/reset.scss';
+@use './base/typography.scss';
+
+/* components */
+@use './components/btn--twitter.scss';
+@use './components/user-avi-widget.scss';
+
+/* layout */
+@use './layout/header.scss';
+
+/* utils */
+@use './utils/variables.scss';
+
+html {
+    background-color: var(--bg--primary);
+}
+
+section {
+    margin-block: 3rem;
+}
+
+.learn-more {
+    color: var(--brand--chirp);
+    font-weight: bold;
+    text-decoration: none;
+}

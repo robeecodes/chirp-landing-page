@@ -31,21 +31,70 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
             <ul class="navbar-nav align-items-md-center">
-              <li class="nav-item text-center mb-2 mb-md-0"><a href="#" class="nav-link active">Home</a></li>
-              <li class="nav-item text-center mb-2 mb-md-0"><a href="#" class="nav-link">Pricing</a></li>
-              <li class="nav-item text-center mb-2 mb-md-0"><a href="#" class="nav-link">FAQ</a></li>
-              <button class="btn btn--twitter"><i class="fa-brands fa-twitter fa-lg"></i> Sign in with Twitter</button>
+              <li class="nav-item text-center mb-2 mb-md-0">
+                <a href="#" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item text-center mb-2 mb-md-0">
+                <a href="#" class="nav-link">Pricing</a>
+              </li>
+              <li class="nav-item text-center mb-2 mb-md-0">
+                <a href="#" class="nav-link">FAQ</a>
+              </li>
+              <button class="btn btn--twitter">
+                <i class="fa-brands fa-twitter fa-lg"></i> Sign in with Twitter
+              </button>
             </ul>
           </div>
         </div>
       </nav>
     </header>
 
-    <section class="main">
-      <article class="intro"></article>
-      <img src="" alt="" class="demo" />
+    <section class="main container-lg d-flex flex-column flex-lg-row">
+      <img
+        src="Assets/Hero Image (Tablet View).png"
+        alt="Chirp Demo Image"
+        class="demo d-none d-md-block d-lg-none col-12"
+      />
+      <img
+        src="Assets/Hero Image (Desktop View).png"
+        alt="Chirp Demo Image"
+        class="demo d-sm-block d-md-none d-lg-block col-12 col-lg-5 order-lg-1"
+      />
+
+      <article class="intro col-12 col-lg-7 p-5">
+        <h1 class="mb-3">Twitter analytics taken to a whole new level.</h1>
+        <p>
+          Chirp is a suite of Twitter analytics that will help you better
+          understand your audience, which tweets they like, and most
+          importantly, when they are most active on Twitter.
+        </p>
+
+        <div class="row-fluid mt-3 align-items-md-center">
+          <button class="btn btn--twitter col-12 col-md-auto mb-3 mb-md-0">
+            <i class="fa-brands fa-twitter fa-lg"></i> Sign in with Twitter
+          </button>
+          <a href="#" class="col-12 col-md-auto learn-more mx-md-0 mx-md-2"
+            >Learn more -></a
+          >
+        </div>
+
+        <div class="user-avi-widget">
+          <img src="Assets/userAvatar01.svg" alt="" class="user-avi" />
+          <img src="Assets/userAvatar02.svg" alt="" class="user-avi" />
+          <img src="Assets/userAvatar03.svg" alt="" class="user-avi" />
+          <img src="Assets/userAvatar04.svg" alt="" class="user-avi" />
+          <img src="Assets/userAvatar05.svg" alt="" class="user-avi" />
+          <img src="Assets/userAvatar06.svg" alt="" class="user-avi" />
+          <img src="Assets/userAvatar07.svg" alt="" class="user-avi" />
+          <img src="Assets/userAvatar08.svg" alt="" class="user-avi" />
+          <img src="Assets/userAvatar09.svg" alt="" class="user-avi" />
+        </div>
+      </article>
     </section>
 
     <section class="features">
@@ -76,6 +125,9 @@
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <!--FontAwesome-->
-    <script src="https://kit.fontawesome.com/a9d9878253.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/a9d9878253.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -1,22 +1,248 @@
-/* main.css */
+/* typography */
+/* font-family: Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
-/* base */
-@import './base/reset.css';
-@import './base/typography.css';
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 
-/* components */
-@import './components/btn--twitter.css';
+body {
+  line-height: 1;
+}
 
-/* layout */
-@import './layout/header.css';
+ol,
+ul {
+  list-style: none;
+}
 
-/* utils */
-@import './utils/variables.css';
+blockquote,
+q {
+  quotes: none;
+}
 
-html {
-    background-color: var(--bg--primary);
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* document font: Inter */
+html * {
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2 {
+  color: black;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.25;
 }
 
 p {
-    color: var(--txt--body);
+  color: var(--txt--body);
+  line-height: 1.5;
 }
+
+/* btn--twitter.css */
+.btn--twitter {
+  /* visual */
+  background-color: var(--brand--twitter);
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.fa-twitter {
+  /* positioning */
+  margin-right: 0.5rem;
+}
+
+/* user-avi-widget.css */
+.user-avi-widget {
+  /* box-model */
+  display: flex;
+  flex-direction: row;
+}
+
+.user-avi {
+  /* visual */
+  aspect-ratio: 1/1;
+  border: 0.1rem white solid;
+  border-radius: 50%;
+  height: 10vh;
+  max-height: 4rem;
+  margin-top: 2rem;
+}
+
+.user-avi:not(:first-of-type) {
+  margin-left: -1.5rem;
+}
+
+/* header.css */
+/* @Override */
+.navbar-brand {
+  /* visual */
+  color: var(--brand--chirp);
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* @Override */
+.navbar-toggler {
+  border: none;
+}
+
+/* @Override */
+.nav-item {
+  margin-right: 1rem;
+}
+
+/* @Override */
+.nav-link {
+  color: var(--txt--nav);
+}
+
+/* colours */
+:root {
+  /* background colours */
+  --bg--accent: #d7f5f5;
+  /* @Override */
+  --bs-body-bg: #fbf8f3;
+  /* brand colours */
+  --brand--chirp: #1f7898;
+  --brand--twitter: #1da1f2;
+  /* text */
+  --txt--body: #737373;
+  --txt--nav: #6d6d6d;
+}
+
+/* main.css */
+/* base */
+/* components */
+/* layout */
+/* utils */
+html {
+  background-color: var(--bg--primary);
+}
+
+section {
+  margin-block: 3rem;
+}
+
+.learn-more {
+  color: var(--brand--chirp);
+  font-weight: bold;
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */
