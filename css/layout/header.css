@@ -1,0 +1,25 @@
+/* header.css */
+
+/* @Override */
+.navbar-brand {
+    /* visual */
+    color: var(--brand--chirp);
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* @Override */
+.navbar-toggler {
+    border: none;
+}
+
+/* @Override */
+.nav-item {
+    margin-right: 1rem;
+}
+
+/* @Override */
+.nav-link {
+    color: var(--txt--nav);
+}

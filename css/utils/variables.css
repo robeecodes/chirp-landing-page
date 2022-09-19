@@ -1,0 +1,17 @@
+/* colours */
+
+:root {
+    /* background colours */
+    --bg--accent: #d7f5f5;
+
+    /* @Override */
+    --bs-body-bg: #fbf8f3;
+
+    /* brand colours */
+    --brand--chirp: #1f7898;
+    --brand--twitter: #1da1f2;
+    
+    /* text */
+    --txt--body: #737373;
+    --txt--nav: #6d6d6d;
+}

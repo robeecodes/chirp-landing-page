@@ -1,2 +1,22 @@
+/* main.css */
+
 /* base */
-@import 'css/base/reset.css';
+@import './base/reset.css';
+@import './base/typography.css';
+
+/* components */
+@import './components/btn--twitter.css';
+
+/* layout */
+@import './layout/header.css';
+
+/* utils */
+@import './utils/variables.css';
+
+html {
+    background-color: var(--bg--primary);
+}
+
+p {
+    color: var(--txt--body);
+}
