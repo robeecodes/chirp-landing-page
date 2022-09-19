@@ -1,18 +1,18 @@
 /* main.css */
 
 /* base */
-@use './base/reset.scss';
-@use './base/typography.scss';
+@import './base/reset.scss';
+@import './base/typography.scss';
 
 /* components */
-@use './components/btn--twitter.scss';
-@use './components/user-avi-widget.scss';
+@import './components/btn--twitter.scss';
+@import './components/user-avi-widget.scss';
 
 /* layout */
-@use './layout/header.scss';
+@import './layout/header.scss';
 
 /* utils */
-@use './utils/variables.scss';
+@import './utils/variables.scss';
 
 html {
     background-color: var(--bg--primary);

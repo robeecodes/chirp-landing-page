@@ -4,6 +4,7 @@
     /* box-model */
     display: flex;
     flex-direction: row;
+    margin-top: 2rem;
 }
 
 .user-avi {
@@ -11,9 +12,8 @@
     aspect-ratio: 1/1;
     border: .1rem white solid;
     border-radius: 50%;
-    height: 10vh;
-    max-height: 4rem;
-    margin-top: 2rem;
+    max-width: 4rem;
+    width: 10vw;
 }
 
 .user-avi:not(:first-of-type) {
