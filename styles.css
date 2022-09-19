@@ -1,10 +1,10 @@
-/* main.css */
-/* base */
+/* typography.scss */
+/* font-family: Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap");
 html,
 body,
 div,
@@ -91,7 +91,8 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -105,79 +106,99 @@ hgroup,
 menu,
 nav,
 section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol,
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote,
 q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
   content: "";
-  content: none; }
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
-/* typography */
-/* font-family: Inter */
 /* document font: Inter */
 html * {
-  font-family: 'Inter', sans-serif; }
+  font-family: "Inter", sans-serif;
+}
 
-h1, h2 {
+h1,
+h2 {
   color: black;
-  font-size: 4rem;
+  font-size: 2rem;
+  font-size: clamp(2rem, 2rem + (1vw - 0.234375rem) * 2.0712, 4rem);
+  min-height: 0vw;
   font-weight: bold;
-  line-height: 1.25; }
+  line-height: 1.25;
+}
 
 p {
   color: var(--txt--body);
-  line-height: 1.5; }
+}
 
-/* components */
-/* btn--twitter.css */
+p,
+a,
+li,
+.btn {
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+/* btn--twitter.scss */
 .btn--twitter {
   /* visual */
   background-color: var(--brand--twitter);
   color: white;
   font-weight: bold;
-  padding: 1rem; }
+  padding: 1rem;
+}
 
 .fa-twitter {
   /* positioning */
-  margin-right: .5rem; }
+  margin-right: 0.5rem;
+}
 
-/* user-avi-widget.css */
+/* user-avi-widget.scss */
 .user-avi-widget {
   /* box-model */
   display: flex;
   flex-direction: row;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+}
 
 .user-avi {
   /* visual */
   aspect-ratio: 1/1;
-  border: .1rem white solid;
+  border: 0.1rem white solid;
   border-radius: 50%;
   max-width: 4rem;
-  width: 10vw; }
+  width: 10vw;
+}
 
 .user-avi:not(:first-of-type) {
-  margin-left: -1.5rem; }
+  margin-left: -1.5rem;
+}
 
-/* layout */
-/* header.css */
+/* header.scss */
 /* @Override */
 .navbar-brand {
   /* visual */
@@ -185,21 +206,38 @@ p {
   font-size: 1.5rem;
   font-style: italic;
   font-weight: bold;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 /* @Override */
 .navbar-toggler {
-  border: none; }
+  border: none;
+}
 
 /* @Override */
 .nav-item {
-  margin-right: 1rem; }
+  margin-right: 1rem;
+}
 
 /* @Override */
 .nav-link {
-  color: var(--txt--nav); }
+  color: var(--txt--nav);
+}
 
-/* utils */
+/* accent-text.scss */
+.accent-text {
+  color: var(--brand--chirp);
+  font-weight: bold;
+}
+
+/* learn-more.scss */
+.learn-more {
+  color: var(--brand--chirp);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* variables.scss */
 /* colours */
 :root {
   /* background colours */
@@ -211,17 +249,20 @@ p {
   --brand--twitter: #1da1f2;
   /* text */
   --txt--body: #737373;
-  --txt--nav: #6d6d6d; }
+  --txt--nav: #6d6d6d;
+}
 
+/* main.css */
+/* base */
+/* components */
+/* layout */
+/* utils */
 html {
-  background-color: var(--bg--primary); }
+  background-color: var(--bg--primary);
+}
 
 section {
-  margin-block: 3rem; }
-
-.learn-more {
-  color: var(--brand--chirp);
-  font-weight: bold;
-  text-decoration: none; }
+  margin-block: 3rem;
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,18 +1,20 @@
 /* main.css */
 
 /* base */
-@import './base/reset.scss';
-@import './base/typography.scss';
+@use './base/reset.scss';
+@use './base/typography.scss';
 
 /* components */
-@import './components/btn--twitter.scss';
-@import './components/user-avi-widget.scss';
+@use './components/btn--twitter.scss';
+@use './components/user-avi-widget.scss';
 
 /* layout */
-@import './layout/header.scss';
+@use './layout/header.scss';
 
 /* utils */
-@import './utils/variables.scss';
+@use './utils/accent-text.scss';
+@use './utils/learn-more.scss';
+@use './utils/variables.scss';
 
 html {
     background-color: var(--bg--primary);
@@ -20,10 +22,4 @@ html {
 
 section {
     margin-block: 3rem;
-}
-
-.learn-more {
-    color: var(--brand--chirp);
-    font-weight: bold;
-    text-decoration: none;
 }
