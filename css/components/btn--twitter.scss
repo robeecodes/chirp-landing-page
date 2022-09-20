@@ -1,5 +1,11 @@
 /* btn--twitter.scss */
 
+/* position */
+/* box-model */
+/* typography */
+/* visual */
+/* misc */
+
 .btn--twitter {
     /* box-model */
     padding: 1rem;
@@ -10,8 +16,15 @@
 
     /* visual */
     background-color: var(--brand--twitter);
+
+    /* misc */
+    /* @Override */
+    --bs-btn-hover-bg: var(--brand--twitter--dark);
+    /* @Override */
+    --bs-btn-hover-color: white;
 }
 
+/* @Override */
 .fa-twitter {
     /* box-model */
     margin-right: .5rem;

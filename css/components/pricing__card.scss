@@ -1,0 +1,50 @@
+/* pricing__card.scss */
+
+.pricing__card {
+  /* box-model */
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  /* visual */
+  background-color: var(--bg--primary);
+  border: 0.1rem solid #ffad23;
+  border-radius: 0.5rem;
+
+  &--header {
+    /* box-model */
+    padding-bottom: 1rem;
+
+    /* visual */
+    border-bottom: 0.1rem solid var(--border);
+
+    .price-font {
+      /* typography */
+      font-size: 5rem;
+    }
+  }
+
+  &--body {
+    /* visual */
+    border-bottom: 0.1rem solid var(--border);
+
+    ul {
+      /* box-model */
+      margin: 2rem;
+
+      /* visual */
+      list-style-position: outside;
+      list-style-type: circle;
+
+      li {
+        /* box-model */
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+  &--footer {
+    /* box-model */
+    padding-top: 2rem;
+  }
+}

@@ -173,6 +173,11 @@ li,
 }
 
 /* btn--twitter.scss */
+/* position */
+/* box-model */
+/* typography */
+/* visual */
+/* misc */
 .btn--twitter {
   /* box-model */
   padding: 1rem;
@@ -181,8 +186,14 @@ li,
   font-weight: bold;
   /* visual */
   background-color: var(--brand--twitter);
+  /* misc */
+  /* @Override */
+  --bs-btn-hover-bg: var(--brand--twitter--dark);
+  /* @Override */
+  --bs-btn-hover-color: white;
 }
 
+/* @Override */
 .fa-twitter {
   /* box-model */
   margin-right: 0.5rem;
@@ -210,22 +221,68 @@ li,
   border-radius: 0.5rem;
 }
 
+/* pricing__card.scss */
+.pricing__card {
+  /* box-model */
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  /* visual */
+  background-color: var(--bg--primary);
+  border: 0.1rem solid #ffad23;
+  border-radius: 0.5rem;
+}
+.pricing__card--header {
+  /* box-model */
+  padding-bottom: 1rem;
+  /* visual */
+  border-bottom: 0.1rem solid var(--border);
+}
+.pricing__card--header .price-font {
+  /* typography */
+  font-size: 5rem;
+}
+.pricing__card--body {
+  /* visual */
+  border-bottom: 0.1rem solid var(--border);
+}
+.pricing__card--body ul {
+  /* box-model */
+  margin: 2rem;
+  /* visual */
+  list-style-position: outside;
+  list-style-type: circle;
+}
+.pricing__card--body ul li {
+  /* box-model */
+  padding-bottom: 1rem;
+}
+.pricing__card--footer {
+  /* box-model */
+  padding-top: 2rem;
+}
+
 /* testimonial__cards.scss */
 .testimonial__cards {
   /* box-model */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-gap: 1rem;
+  align-items: start;
+  display: flex;
+  justify-content: space-between;
+  /* visual */
+  width: 100%;
 }
 @media only screen and (max-width: 992px) {
   .testimonial__cards {
     /* box-model */
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    flex-direction: column;
   }
 }
 
+/* position */
+/* box-model */
+/* typography */
+/* visual */
+/* misc */
 .testimonial__card {
   /* box-model */
   display: flex;
@@ -234,6 +291,16 @@ li,
   /* visual */
   background-color: #fff;
   border-radius: 0.5rem;
+  width: 32%;
+}
+@media only screen and (max-width: 992px) {
+  .testimonial__card {
+    /* box-model */
+    margin-block: 1rem;
+    margin-inline: 0;
+    /* visual */
+    width: 100%;
+  }
 }
 .testimonial__card--header {
   /* box-model */
@@ -258,6 +325,19 @@ li,
   /* typography */
   color: var(--brand--twitter);
 }
+.testimonial__card--body {
+  /* box-model */
+  padding-bottom: 1rem;
+}
+.testimonial__card--footer {
+  /* box-model */
+  display: flex;
+  justify-content: space-between;
+}
+.testimonial__card--footer .fa-heart {
+  /* visual */
+  color: rgb(216, 0, 29);
+}
 
 /* user-avi-widget.scss */
 .user-avi-widget {
@@ -278,35 +358,52 @@ li,
   margin-left: -1.5rem;
 }
 
-/* header.scss */
-.navbar {
-  background-color: var(--bg--main);
+/* footer.scss */
+footer {
+  /* visual */
+  background-color: var(--bg--accent);
+  /* @Override */
 }
-
-/* @Override */
-.navbar-brand {
+footer .navbar {
+  /* box-model */
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 576px) {
+  footer .navbar {
+    /* box-model */
+    flex-direction: column;
+    align-items: start;
+  }
+}
+footer .navbar .nav-item a {
+  /* typography */
+  color: black;
+  text-decoration: none;
+  /* visual */
+  transition: color 0.2s;
+}
+footer .navbar .nav-item a:hover {
   /* typography */
   color: var(--brand--chirp);
-  font-size: 1.5rem;
-  font-style: italic;
-  font-weight: bold;
-  text-decoration: none;
 }
 
-/* @Override */
-.navbar-toggler {
+/* header.scss */
+header {
+  background-color: var(--bg--main);
+  /* @Override */
+  /* @Override */
+  /* @Override */
+}
+header .navbar-toggler {
   /* visual */
   border: none;
 }
-
-/* @Override */
-.nav-item {
+header .nav-item {
   /* box-model */
   margin-right: 1rem;
 }
-
-/* @Override */
-.nav-link {
+header .nav-link {
   /* typography */
   color: var(--txt--nav);
 }
@@ -332,6 +429,17 @@ li,
   text-decoration: none;
 }
 
+/* navbar-brand.scss */
+/* @Override */
+.navbar-brand {
+  /* typography */
+  color: var(--brand--chirp);
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 /* variables.scss */
 /* colours */
 :root {
@@ -344,6 +452,7 @@ li,
   /* brand colours */
   --brand--chirp: #1f7898;
   --brand--twitter: #1da1f2;
+  --brand--twitter--dark: #1175b3;
   /* text */
   --txt--body: #737373;
   --txt--nav: #6d6d6d;

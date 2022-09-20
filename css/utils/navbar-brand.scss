@@ -1,0 +1,11 @@
+/* navbar-brand.scss */
+
+/* @Override */
+.navbar-brand {
+  /* typography */
+  color: var(--brand--chirp);
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+}

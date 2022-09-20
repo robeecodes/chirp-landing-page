@@ -13,16 +13,19 @@
 /* components */
 @use './components/btn--twitter.scss';
 @use './components/features.scss';
+@use './components/pricing__card.scss';
 @use './components/testimonial__cards.scss';
 @use './components/user-avi-widget.scss';
 
 /* layout */
+@use './layout/footer.scss';
 @use './layout/header.scss';
 
 /* utils */
 @use './utils/accent-text.scss';
 @use './utils/emoji.scss';
 @use './utils/learn-more.scss';
+@use './utils/navbar-brand.scss';
 @use './utils/variables.scss';
 
 html {

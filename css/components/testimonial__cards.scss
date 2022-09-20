@@ -2,17 +2,24 @@
 
 .testimonial__cards {
   /* box-model */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-gap: 1rem;
+  align-items: start;
+  display: flex;
+  justify-content: space-between;
+
+  /* visual */
+  width: 100%;
 
   @media only screen and (max-width: 992px) {
     /* box-model */
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    flex-direction: column;
   }
 }
+
+/* position */
+/* box-model */
+/* typography */
+/* visual */
+/* misc */
 
 .testimonial__card {
   /* box-model */
@@ -23,6 +30,16 @@
   /* visual */
   background-color: #fff;
   border-radius: 0.5rem;
+  width: 32%;
+
+  @media only screen and (max-width: 992px) {
+    /* box-model */
+    margin-block: 1rem;
+    margin-inline: 0;
+
+    /* visual */
+    width: 100%;
+  }
 
   &--header {
     /* box-model */
@@ -46,6 +63,19 @@
     .fa-twitter {
       /* typography */
       color: var(--brand--twitter);
+    }
+  }
+  &--body {
+    /* box-model */
+    padding-bottom: 1rem;
+  }
+  &--footer {
+    /* box-model */
+    display: flex;
+    justify-content: space-between;
+    .fa-heart {
+        /* visual */
+        color: rgb(216, 0, 29);
     }
   }
 }
