@@ -1,14 +1,18 @@
 /* btn--twitter.scss */
 
 .btn--twitter {
-    /* visual */
-    background-color: var(--brand--twitter);
+    /* box-model */
+    padding: 1rem;
+
+    /* typography */
     color: white;
     font-weight: bold;
-    padding: 1rem;
+
+    /* visual */
+    background-color: var(--brand--twitter);
 }
 
 .fa-twitter {
-    /* positioning */
+    /* box-model */
     margin-right: .5rem;
 }

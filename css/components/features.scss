@@ -1,0 +1,22 @@
+/* features.scss */
+
+.features {
+  /* box-model */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1rem;
+
+  @media only screen and (max-width: 992px) {
+    /* box-model */
+    grid-template-columns: 1fr;
+  }
+  &__card {
+    /* box-model */
+      padding: 1rem;
+
+      /* visual */
+      border: .1rem solid var(--border);
+      border-radius: .5rem;
+  }
+}

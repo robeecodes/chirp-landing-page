@@ -142,19 +142,28 @@ html * {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   color: black;
-  font-size: 2rem;
-  font-size: clamp(2rem, 2rem + (1vw - 0.234375rem) * 2.0712, 4rem);
-  min-height: 0vw;
   font-weight: bold;
   line-height: 1.25;
+}
+
+h1 {
+  font-size: clamp(2rem, 2rem + (1vw - 0.234375rem) * 2.0712, 4rem);
+  min-height: 0vw;
+}
+
+h2 {
+  font-size: clamp(2rem, 2rem + (1vw - 0.234375rem) * 1.0356, 3rem);
+  min-height: 0vw;
 }
 
 p {
   color: var(--txt--body);
 }
 
+h3,
 p,
 a,
 li,
@@ -165,16 +174,89 @@ li,
 
 /* btn--twitter.scss */
 .btn--twitter {
-  /* visual */
-  background-color: var(--brand--twitter);
+  /* box-model */
+  padding: 1rem;
+  /* typography */
   color: white;
   font-weight: bold;
-  padding: 1rem;
+  /* visual */
+  background-color: var(--brand--twitter);
 }
 
 .fa-twitter {
-  /* positioning */
+  /* box-model */
   margin-right: 0.5rem;
+}
+
+/* features.scss */
+.features {
+  /* box-model */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+@media only screen and (max-width: 992px) {
+  .features {
+    /* box-model */
+    grid-template-columns: 1fr;
+  }
+}
+.features__card {
+  /* box-model */
+  padding: 1rem;
+  /* visual */
+  border: 0.1rem solid var(--border);
+  border-radius: 0.5rem;
+}
+
+/* testimonial__cards.scss */
+.testimonial__cards {
+  /* box-model */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+}
+@media only screen and (max-width: 992px) {
+  .testimonial__cards {
+    /* box-model */
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+.testimonial__card {
+  /* box-model */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  /* visual */
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+.testimonial__card--header {
+  /* box-model */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+.testimonial__card--header .user {
+  /* box-model */
+  display: flex;
+  align-items: center;
+}
+.testimonial__card--header .user img {
+  /* box-model */
+  margin-right: 1rem;
+  /* visual */
+  aspect-ratio: 1/1;
+  width: 5rem;
+}
+.testimonial__card--header .fa-twitter {
+  /* typography */
+  color: var(--brand--twitter);
 }
 
 /* user-avi-widget.scss */
@@ -182,26 +264,28 @@ li,
   /* box-model */
   display: flex;
   flex-direction: row;
-  margin-top: 2rem;
 }
 
 .user-avi {
   /* visual */
   aspect-ratio: 1/1;
-  border: 0.1rem white solid;
-  border-radius: 50%;
   max-width: 4rem;
   width: 10vw;
 }
 
 .user-avi:not(:first-of-type) {
+  /* box-model */
   margin-left: -1.5rem;
 }
 
 /* header.scss */
+.navbar {
+  background-color: var(--bg--main);
+}
+
 /* @Override */
 .navbar-brand {
-  /* visual */
+  /* typography */
   color: var(--brand--chirp);
   font-size: 1.5rem;
   font-style: italic;
@@ -211,27 +295,38 @@ li,
 
 /* @Override */
 .navbar-toggler {
+  /* visual */
   border: none;
 }
 
 /* @Override */
 .nav-item {
+  /* box-model */
   margin-right: 1rem;
 }
 
 /* @Override */
 .nav-link {
+  /* typography */
   color: var(--txt--nav);
 }
 
 /* accent-text.scss */
 .accent-text {
+  /* typography */
   color: var(--brand--chirp);
   font-weight: bold;
 }
 
+/* emoji.scss */
+.emoji {
+  /* typography */
+  font-size: 2rem;
+}
+
 /* learn-more.scss */
 .learn-more {
+  /* typography */
   color: var(--brand--chirp);
   font-weight: bold;
   text-decoration: none;
@@ -243,7 +338,9 @@ li,
   /* background colours */
   --bg--accent: #d7f5f5;
   /* @Override */
-  --bs-body-bg: #fbf8f3;
+  --bg--main: #fbf8f3;
+  /* border colour */
+  --border: #c4c4c4;
   /* brand colours */
   --brand--chirp: #1f7898;
   --brand--twitter: #1da1f2;
@@ -253,16 +350,33 @@ li,
 }
 
 /* main.css */
+/* position */
+/* box-model */
+/* typography */
+/* visual */
+/* misc */
 /* base */
 /* components */
 /* layout */
 /* utils */
 html {
+  /* visual */
   background-color: var(--bg--primary);
 }
 
 section {
-  margin-block: 3rem;
+  /* box-model */
+  padding-block: 3rem;
+}
+
+.main {
+  /* visual */
+  background-color: var(--bg--main);
+}
+
+.testimonials {
+  /* visual */
+  background-color: var(--bg--accent);
 }
 
 /*# sourceMappingURL=styles.css.map */

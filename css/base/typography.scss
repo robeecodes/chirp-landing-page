@@ -9,19 +9,28 @@ html * {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   color: black;
-  font-size: 2rem;
-  font-size: clamp(2rem, calc(2rem + ((1vw - 0.234375rem) * 2.0712)), 4rem);
-  min-height: 0vw;
   font-weight: bold;
   line-height: 1.25;
+}
+
+h1 {
+  font-size: clamp(2rem, calc(2rem + ((1vw - 0.234375rem) * 2.0712)), 4rem);
+  min-height: 0vw;
+}
+
+h2 {
+  font-size: clamp(2rem, calc(2rem + ((1vw - 0.234375rem) * 1.0356)), 3rem);
+  min-height: 0vw;
 }
 
 p {
   color: var(--txt--body);
 }
 
+h3,
 p,
 a,
 li,

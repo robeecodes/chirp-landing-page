@@ -1,26 +1,33 @@
 /* header.scss */
 
+.navbar {
+  background-color: var(--bg--main);
+}
+
 /* @Override */
 .navbar-brand {
-    /* visual */
-    color: var(--brand--chirp);
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: none;
+  /* typography */
+  color: var(--brand--chirp);
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* @Override */
 .navbar-toggler {
-    border: none;
+  /* visual */
+  border: none;
 }
 
 /* @Override */
 .nav-item {
-    margin-right: 1rem;
+  /* box-model */
+  margin-right: 1rem;
 }
 
 /* @Override */
 .nav-link {
-    color: var(--txt--nav);
+  /* typography */
+  color: var(--txt--nav);
 }

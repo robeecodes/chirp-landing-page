@@ -1,0 +1,51 @@
+/* testimonial__cards.scss */
+
+.testimonial__cards {
+  /* box-model */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+
+  @media only screen and (max-width: 992px) {
+    /* box-model */
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+.testimonial__card {
+  /* box-model */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  /* visual */
+  background-color: #fff;
+  border-radius: 0.5rem;
+
+  &--header {
+    /* box-model */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    .user {
+      /* box-model */
+      display: flex;
+      align-items: center;
+      img {
+        /* box-model */
+        margin-right: 1rem;
+
+        /* visual */
+        aspect-ratio: 1/1;
+        width: 5rem;
+      }
+    }
+    .fa-twitter {
+      /* typography */
+      color: var(--brand--twitter);
+    }
+  }
+}

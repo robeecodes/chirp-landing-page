@@ -5,9 +5,11 @@
 :root {
     /* background colours */
     --bg--accent: #d7f5f5;
-
     /* @Override */
-    --bs-body-bg: #fbf8f3;
+    --bg--main: #fbf8f3;
+
+    /* border colour */
+    --border: #c4c4c4;
 
     /* brand colours */
     --brand--chirp: #1f7898;

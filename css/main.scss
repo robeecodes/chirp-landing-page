@@ -1,11 +1,19 @@
 /* main.css */
 
+/* position */
+/* box-model */
+/* typography */
+/* visual */
+/* misc */
+
 /* base */
 @use './base/reset.scss';
 @use './base/typography.scss';
 
 /* components */
 @use './components/btn--twitter.scss';
+@use './components/features.scss';
+@use './components/testimonial__cards.scss';
 @use './components/user-avi-widget.scss';
 
 /* layout */
@@ -13,13 +21,26 @@
 
 /* utils */
 @use './utils/accent-text.scss';
+@use './utils/emoji.scss';
 @use './utils/learn-more.scss';
 @use './utils/variables.scss';
 
 html {
+    /* visual */
     background-color: var(--bg--primary);
 }
 
 section {
-    margin-block: 3rem;
+    /* box-model */
+    padding-block: 3rem;
+}
+
+.main {
+    /* visual */
+    background-color: var(--bg--main);
+}
+
+.testimonials {
+    /* visual */
+    background-color: var(--bg--accent);
 }

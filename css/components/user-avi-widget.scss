@@ -1,21 +1,19 @@
 /* user-avi-widget.scss */
 
 .user-avi-widget {
-    /* box-model */
-    display: flex;
-    flex-direction: row;
-    margin-top: 2rem;
+  /* box-model */
+  display: flex;
+  flex-direction: row;
 }
 
 .user-avi {
-    /* visual */
-    aspect-ratio: 1/1;
-    border: .1rem white solid;
-    border-radius: 50%;
-    max-width: 4rem;
-    width: 10vw;
+  /* visual */
+  aspect-ratio: 1/1;
+  max-width: 4rem;
+  width: 10vw;
 }
 
 .user-avi:not(:first-of-type) {
-    margin-left: -1.5rem;
+  /* box-model */
+  margin-left: -1.5rem;
 }

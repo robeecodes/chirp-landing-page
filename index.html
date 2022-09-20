@@ -12,13 +12,15 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
     />
 
-    <!--main.css-->
+    <!--styles.min.css-->
+    <!--Switch to this at end of production-->
+    <!--<link rel="stylesheet" href="styles.min.css" />-->
     <link rel="stylesheet" href="styles.css" />
   </head>
 
-  <body class="mt-5">
+  <body>
     <header>
-      <nav class="navbar navbar-expand-md">
+      <nav class="navbar navbar-expand-md pt-5">
         <div class="container-lg">
           <a href="#" class="navbar-brand">Chirp.</a>
           <button
@@ -29,7 +31,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <img src="Assets/Hamburger Menu.svg" alt="">
+            <img src="Assets/Hamburger Menu.svg" alt="" />
           </button>
           <div
             class="collapse navbar-collapse justify-content-end"
@@ -54,76 +56,193 @@
       </nav>
     </header>
 
-    <section class="main container-lg d-flex flex-column flex-lg-row">
-      <img
-        src="Assets/Hero Image (Tablet View).png"
-        alt="Chirp Demo Image"
-        class="demo d-none d-md-block d-lg-none col-12 px-5"
-      />
-      <img
-        src="Assets/Hero Image (Desktop View).png"
-        alt="Chirp Demo Image"
-        class="demo d-sm-block d-md-none d-lg-block col-12 col-lg-5 order-lg-1"
-      />
-
-      <article
-        class="intro col-12 col-lg-7 mt-3 mt-md-0 p-2 p-md-5 d-flex flex-column justify-content-center"
+    <section class="main">
+      <div
+        class="container-lg p-2 p-lg-0 d-flex flex-column flex-lg-row justify-content-between"
       >
-        <h1 class="mb-3">Twitter analytics taken to a whole new level.</h1>
-        <p>
-          Chirp is a suite of Twitter analytics that will help you better
-          understand your audience, which tweets they like, and most
-          importantly, when they are most active on Twitter.
-        </p>
+        <img
+          src="Assets/Hero Image (Tablet View).png"
+          alt="Chirp Demo Image"
+          class="demo d-none d-md-block d-lg-none col-12 px-5"
+        />
+        <img
+          src="Assets/Hero Image (Desktop View).png"
+          alt="Chirp Demo Image"
+          class="demo d-sm-block d-md-none d-lg-block col-12 col-lg-5 order-lg-1 px-5 p-lg-0"
+        />
 
-        <div
-          class="mt-3 d-flex flex-column align-items-center flex-md-row align-items-md-left"
+        <article
+          class="intro col-12 col-lg-6 mt-5 mt-lg-0 px-5 px-lg-0 me-lg-5 d-flex flex-column justify-content-center"
         >
-          <button class="btn btn--twitter col-12 col-md-auto mb-3 mb-md-0">
-            <i class="fa-brands fa-twitter fa-lg"></i> Sign in with Twitter
-          </button>
-          <a
-            href="#"
-            class="col-12 col-md-auto learn-more mx-md-0 mx-md-3 text-center"
-            >Learn more -></a
+          <h1 class="mb-3">Twitter analytics taken to a whole new level.</h1>
+          <p>
+            Chirp is a suite of Twitter analytics that will help you better
+            understand your audience, which tweets they like, and most
+            importantly, when they are most active on Twitter.
+          </p>
+
+          <div
+            class="my-4 d-flex flex-column align-items-center flex-md-row align-items-md-left"
           >
-        </div>
+            <button class="btn btn--twitter col-12 col-md-auto mb-3 mb-md-0">
+              <i class="fa-brands fa-twitter fa-lg"></i> Sign in with Twitter
+            </button>
+            <a
+              href="#"
+              class="col-12 col-md-auto learn-more mx-md-0 mx-md-3 text-center"
+              >Learn more -></a
+            >
+          </div>
 
-        <div class="user-avi-widget">
-          <img src="Assets/userAvatar01.svg" alt="" class="user-avi" />
-          <img src="Assets/userAvatar02.svg" alt="" class="user-avi" />
-          <img src="Assets/userAvatar03.svg" alt="" class="user-avi" />
-          <img src="Assets/userAvatar04.svg" alt="" class="user-avi" />
-          <img src="Assets/userAvatar05.svg" alt="" class="user-avi" />
-          <img src="Assets/userAvatar06.svg" alt="" class="user-avi" />
-          <img src="Assets/userAvatar07.svg" alt="" class="user-avi" />
-          <img src="Assets/userAvatar08.svg" alt="" class="user-avi" />
-          <img src="Assets/userAvatar09.svg" alt="" class="user-avi" />
-        </div>
+          <div class="user-avi-widget">
+            <img src="Assets/userAvatar01.svg" alt="" class="user-avi" />
+            <img src="Assets/userAvatar02.svg" alt="" class="user-avi" />
+            <img src="Assets/userAvatar03.svg" alt="" class="user-avi" />
+            <img src="Assets/userAvatar04.svg" alt="" class="user-avi" />
+            <img src="Assets/userAvatar05.svg" alt="" class="user-avi" />
+            <img src="Assets/userAvatar06.svg" alt="" class="user-avi" />
+            <img src="Assets/userAvatar07.svg" alt="" class="user-avi" />
+            <img src="Assets/userAvatar08.svg" alt="" class="user-avi" />
+            <img src="Assets/userAvatar09.svg" alt="" class="user-avi" />
+          </div>
 
-        <p class="mt-3 col-12 col-md-10">
-          Join <span class="accent-text">195</span> others who have analyzed
-          their followers and scheduled
-          <span class="accent-text">1342</span> tweets!
-        </p>
-      </article>
+          <p class="mt-3 col-12 col-md-10">
+            Join <span class="accent-text">195</span> others who have analyzed
+            their followers and scheduled
+            <span class="accent-text">1342</span> tweets!
+          </p>
+        </article>
+      </div>
     </section>
 
-    <section class="features">
-      <article>
-        <div class="feature-card"></div>
-        <div class="feature-card"></div>
-        <div class="feature-card"></div>
-        <div class="feature-card"></div>
-      </article>
+    <section class="details">
+      <div class="container-lg pt-3 pt-md-0 px-5 px-lg-0">
+        <article>
+          <h2 class="col-12 col-md-7 col-lg-6 mb-4">
+            Features that help you Tweet smarter.
+          </h2>
+          <div class="features">
+            <div class="features__card">
+              <p class="emoji mb-2">📈</p>
+              <h3 class="mb-3">Analytics</h3>
+              <p>
+                We constantly monitor your audience as it grows &mdash; so you
+                can Tweet when your followers are most likely to be online and
+                ready to engage with your content.
+              </p>
+            </div>
+            <div class="features__card">
+              <p class="emoji mb-2">🤓</p>
+              <h3 class="mb-3">Smart Analyzer</h3>
+              <p>
+                Chirp automatically recognizes your followers' most active times
+                and automatically sends you notifications if you're missing out
+                on an opportunity.
+              </p>
+            </div>
+            <div class="features__card">
+              <p class="emoji mb-2">🗞</p>
+              <h3 class="mb-3">Schedule Your Tweets</h3>
+              <p>
+                Quality tweets drive tons of engagement. With Chirp, you can
+                write tweets in advance and schedule them when your audience is
+                most likely to read.
+              </p>
+            </div>
+            <div class="features__card">
+              <p class="emoji mb-2">☼</p>
+              <h3 class="mb-3">Dark Mode</h3>
+              <p>
+                Friendly on the eyes, no matter what time you write your Tweets.
+                All colors are chosen to make sure your eyes are at ease at all
+                times.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section class="testimonials">
-      <article>
-        <div class="testimonial-card"></div>
-        <div class="testimonial-card"></div>
-        <div class="testimonial-card"></div>
-      </article>
+      <div class="container-lg pt-3 pt-md-0 px-5 px-lg-0">
+        <article>
+          <h2 class="col-12 col-md-7 col-lg-6 mb-4">What our customers say</h2>
+          <div class="testimonial__cards">
+            <div class="testimonial__card">
+              <div class="testimonial__card--header">
+                <div class="user">
+                  <img src="Assets/userAvatar07.svg" alt="" />
+                  <p>
+                    <span class="fw-bold text-black">Jack Scott</span>
+                    <br />
+                    <span class="fs-6">@jackscott_</span>
+                  </p>
+                </div>
+                <i class="fa-brands fa-twitter fa-2xl"></i>
+              </div>
+              <div class="testimonial__card--body">
+                <p>
+                  I initially started using Chirp to support the co-founder as I
+                  personally knew him, but after having tried it out for a few
+                  weeks, I can genuinely say this changed my Twitter game.
+                </p>
+              </div>
+              <div class="testimonial__card--footer">
+                <p><i class="fa-regular fa-heart"></i> 32</p>
+                <p>March 2, 2021</p>
+              </div>
+            </div>
+            <div class="testimonial__card">
+              <div class="testimonial__card--header">
+                <div class="user">
+                  <img src="" alt="" />
+                  <p>
+                    <span class="fw-bold text-black">Jack Scott</span>
+                    <br />
+                    <span class="fs-6">@jackscott_</span>
+                  </p>
+                </div>
+                <i class="fa-brands fa-twitter fa-2xl"></i>
+              </div>
+              <div class="testimonial__card--body">
+                <p>
+                  I initially started using Chirp to support the co-founder as I
+                  personally knew him, but after having tried it out for a few
+                  weeks, I can genuinely say this changed my Twitter game.
+                </p>
+              </div>
+              <div class="testimonial__card--footer">
+                <p><i class="fa-regular fa-heart"></i> 32</p>
+                <p>March 2, 2021</p>
+              </div>
+            </div>
+            <div class="testimonial__card">
+              <div class="testimonial__card--header">
+                <div class="user">
+                  <img src="" alt="" />
+                  <p>
+                    <span class="fw-bold text-black">Jack Scott</span>
+                    <br />
+                    <span class="fs-6">@jackscott_</span>
+                  </p>
+                </div>
+                <i class="fa-brands fa-twitter fa-2xl"></i>
+              </div>
+              <div class="testimonial__card--body">
+                <p>
+                  I initially started using Chirp to support the co-founder as I
+                  personally knew him, but after having tried it out for a few
+                  weeks, I can genuinely say this changed my Twitter game.
+                </p>
+              </div>
+              <div class="testimonial__card--footer">
+                <p><i class="fa-regular fa-heart"></i> 32</p>
+                <p>March 2, 2021</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section class="pricing">
