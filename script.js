@@ -1,11 +1,10 @@
-import { mainToDetails } from "./js/animations/mainToDetails.js";
+import { mainAnim } from "./js/animations/main.js";
+import { details } from "./js/animations/details.js";
+import { typing } from "./js/animations/typing.js";
 
-ScrollTrigger.addEventListener("scrollStart", function start() {
-  mainToDetails.start();
-  ScrollTrigger.removeEventListener("scrollStart", start);
+window.addEventListener("load", (event) => {
+  mainAnim();
 });
 
-ScrollTrigger.addEventListener("scrollEnd", function end() {
-  mainToDetails.end();
-  ScrollTrigger.removeEventListener("scrollEnd", end);
-});
+details();
+typing();

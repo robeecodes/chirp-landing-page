@@ -63,18 +63,21 @@
         <img
           src="Assets/Hero Image (Tablet View).png"
           alt="Chirp Demo Image"
-          class="demo d-none d-md-block d-lg-none col-12 px-5"
+          class="demo d-none d-md-block d-lg-none col-12 px-5 temp-hide"
         />
         <img
           src="Assets/Hero Image (Desktop View).png"
           alt="Chirp Demo Image"
-          class="demo d-sm-block d-md-none d-lg-block col-12 col-lg-5 order-lg-1 px-5 p-lg-0"
+          class="demo d-sm-block d-md-none d-lg-block col-12 col-lg-5 order-lg-1 px-5 p-lg-0 temp-hide"
         />
 
         <article
-          class="intro col-12 col-lg-6 mt-5 mt-lg-0 px-5 px-lg-0 me-lg-5 d-flex flex-column justify-content-center"
+          class="intro col-12 col-lg-6 mt-5 mt-lg-0 px-5 px-lg-0 me-lg-5 d-flex flex-column justify-content-center temp-hide"
         >
-          <h1 class="mb-3">Twitter analytics taken to a whole new level.</h1>
+          <h1 class="mb-3">
+            Twitter <span id="typewriter">analytics</span> taken to a whole new
+            level.
+          </h1>
           <p>
             Chirp is a suite of Twitter analytics that will help you better
             understand your audience, which tweets they like, and most
@@ -323,6 +326,10 @@
     <!--GSAP-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/TextPlugin.min.js"></script>
+    <!--Collect.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/collect.js/4.34.3/collect.min.js"></script>
     <!--script.js-->
     <script src="script.js" type="module"></script>
   </body>

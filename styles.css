@@ -440,6 +440,12 @@ header .nav-link {
   text-decoration: none;
 }
 
+/* temp-hide.scss */
+.temp-hide {
+  /* visual */
+  visibility: hidden;
+}
+
 /* variables.scss */
 /* colours */
 :root {
